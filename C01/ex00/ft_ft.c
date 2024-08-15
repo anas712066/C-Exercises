@@ -1,23 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_ft.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmajeed- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mumajeed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/04 15:52:38 by mmajeed-          #+#    #+#             */
-/*   Updated: 2024/08/07 16:53:47 by mumajeed         ###   ########.fr       */
+/*   Created: 2024/08/13 11:57:17 by mumajeed          #+#    #+#             */
+/*   Updated: 2024/08/13 12:11:30 by mumajeed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-void	ft_putchar(char c)
+void	ft_ft(int *nbr)
 {
-write(1, &c, 1);
+	*nbr = 42;
 }
-/*int main()
+/*int	main()
 {
-	ft_putchar('H');
-	return(0);
+	int number = 0;
+	printf("Before: %d\n", number);
+
+	ft_ft(&number);
+
+	printf("After: %d\n", number);
+
+	return (0);
 }*/

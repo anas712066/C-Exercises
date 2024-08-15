@@ -1,23 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmajeed- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mumajeed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/04 15:52:38 by mmajeed-          #+#    #+#             */
-/*   Updated: 2024/08/07 16:53:47 by mumajeed         ###   ########.fr       */
+/*   Created: 2024/08/13 12:40:50 by mumajeed          #+#    #+#             */
+/*   Updated: 2024/08/13 12:56:09 by mumajeed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-void	ft_putchar(char c)
+void	ft_swap(int *a, int *b)
 {
-write(1, &c, 1);
+	int	swp;
+
+	swp = *a;
+	*a = *b;
+	*b = swp;
 }
-/*int main()
+/*int	main()
 {
-	ft_putchar('H');
-	return(0);
+	int	a;
+	int	b;
+	int	*ptra;
+	int	*ptrb;
+
+	a = 1;
+	b = 2;
+
+	ptra = &a;
+	ptrb = &b;
+	
+	ft_swap(ptra, ptrb);
+
+	printf("a : %d, b : %d\n", a, b);
 }*/
