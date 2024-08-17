@@ -19,7 +19,7 @@ int	ft_str_is_uppercase(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if ((str[1] >= 'A') && (str[1] <= 'Z'))
+		if ((str[i] >= 'A') && (str[i] <= 'Z'))
 			i++;
 		else
 			return (0);

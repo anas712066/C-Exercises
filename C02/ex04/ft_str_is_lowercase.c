@@ -19,7 +19,7 @@ int	ft_str_is_lowercase(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if ((str[1] >= 'a') && (str[1] <= 'z'))
+		if ((str[i] >= 'a') && (str[i] <= 'z'))
 			i++;
 		else
 			return (0);
