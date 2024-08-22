@@ -1,35 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mumajeed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/17 17:26:52 by mumajeed          #+#    #+#             */
-/*   Updated: 2024/08/22 11:52:36 by mumajeed         ###   ########.fr       */
+/*   Created: 2024/08/20 12:14:57 by mumajeed          #+#    #+#             */
+/*   Updated: 2024/08/22 11:51:46 by mumajeed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	ft_strcmp(char *s1, char *s2)
+char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	while (*s1 && (*s1 == *s2))
+	unsigned int	i;
+	unsigned int	j;
+
+	i = 0;
+	j = 0;
+	while (dest[i] != '\0')
+		i++;
+	while (src[j] != '\0' && j < nb)
 	{
-		s1++;
-		s2++;
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
-	return (*(unsigned char *)s1 - *(unsigned char *)s2);
+	dest[i] = '\0';
+	return (dest);
 }
 /*int	main()
 {
-	char str1[] = "Hello";
-	char str2[] = "Hello";
-	char str3[] = "World";
+	char a[20] = "1234";
+	char b[20] = "6789";
 
-	printf("Comparing str1 and str2: %d\n", ft_strcmp(str1, str2));
-	printf("Comparing str1 and str3: %d\n", ft_strcmp(str1, str3));
-	printf("Comparing str3 and str1: %d\n", ft_strcmp(str3, str1));
-
+	char *t = ft_strncat(a, b, 5);
+	printf("%s\n", t);
 	return (0);
 }*/
