@@ -6,13 +6,13 @@
 /*   By: mumajeed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 13:58:58 by mumajeed          #+#    #+#             */
-/*   Updated: 2024/08/28 14:06:59 by mumajeed         ###   ########.fr       */
+/*   Updated: 2024/08/28 15:46:47 by mumajeed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_is_prime(int nb)
 {
-	int i;
+	int	i;
 
 	i = 2;
 	if (nb <= 1)
@@ -29,7 +29,7 @@ int	ft_is_prime(int nb)
 	}
 	return (1);
 }
-#include <stdio.h>
+/*#include <stdio.h>
 
 int	main()
 {
@@ -41,4 +41,4 @@ int	main()
 		printf("%d no es un numero primo.\n", number);
 
 	return (0);
-}
+}*/
