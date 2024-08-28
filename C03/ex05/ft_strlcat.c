@@ -6,7 +6,7 @@
 /*   By: mumajeed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/22 11:32:31 by mumajeed          #+#    #+#             */
-/*   Updated: 2024/08/22 11:50:30 by mumajeed         ###   ########.fr       */
+/*   Updated: 2024/08/22 16:04:25 by mumajeed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,11 +34,11 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	dest[i] = '\0';
 	return (r);
 }
-/*int	main(void)
+int	main(void)
 {
 	char dest[20] = "Hola";
 	char src[] = "mundo!";
-	unsigned int size = 15;
+	unsigned int size = 7;
 	unsigned int result;
 
 	printf("Before strlcat: \n");
@@ -53,7 +53,7 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	printf("Length = %u\n", result);
 
 	return (0);
-}*/
+}
 /*int	main(void)
 {
 	char dest[20] = "Hello";

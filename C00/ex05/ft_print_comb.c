@@ -16,32 +16,28 @@ void	ft_print_comb(void)
 {
 	int	a;
 	int	b;
-	int	c;
 
-	a = '0';
-	while (a <= '7')
+	a = 0;
+	while (a <= 98)
 	{
 		b = a + 1;
-		while (b <= '8')
+		while (b <= 99)
 		{
-			c = b + 1;
-				while (c <= '9')
-			{
-				write (1, &a, 1);
-				write (1, &b, 1);
-				write (1, &c, 1);
-				if (a != '7')
-					write (1, ", ", 2);
-				c++;
-			}
-			b++;
+			write (1, (a / 10) + '0', 1);
+			write (1, (a % 10) + '0', 1);
+			write (1, " ", 1);
+			write (1, (b / 10) + '0', 1);
+			write (1, (b % 10) + '0', 1);
+			if (a != 98)
+				write (1, ", ", 2);
 		}
-		a++;
+		b++;
 	}
+	a++;
 }
 
-/*int	main(void)
+int	main(void)
 {
 	ft_print_comb();
 	return (0);
-}*/
+}
