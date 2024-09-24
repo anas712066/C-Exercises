@@ -6,13 +6,13 @@
 /*   By: jterrazz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 12:59:42 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/10 12:59:55 by jterrazz         ###   ########.fr       */
+/*   Updated: 2024/09/24 17:30:49 by mumajeed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strlen(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (*(str + i))

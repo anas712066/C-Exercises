@@ -6,13 +6,13 @@
 /*   By: jterrazz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 12:25:04 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/10 12:29:34 by jterrazz         ###   ########.fr       */
+/*   Updated: 2024/09/24 17:21:38 by mumajeed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_swap(int *a, int *b)
 {
-	int temp;
+	int	temp;
 
 	temp = *a;
 	*a = *b;

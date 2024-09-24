@@ -6,7 +6,7 @@
 /*   By: jterrazz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/28 19:18:19 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/03/29 18:54:32 by jterrazz         ###   ########.fr       */
+/*   Updated: 2024/09/24 18:30:34 by mumajeed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,14 @@ void	ft_putchar(char c, int std)
 
 void	ft_putstr(char *str, int std)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i])
 		ft_putchar(str[i++], std);
 }
 
-int		show_char(char **argv)
+int	show_char(char **argv)
 {
 	int		fd;
 	int		ret;
@@ -52,7 +52,7 @@ int		show_char(char **argv)
 	return (1);
 }
 
-int		main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	if (argc == 1)
 		ft_putstr("File name missing.\n", 2);

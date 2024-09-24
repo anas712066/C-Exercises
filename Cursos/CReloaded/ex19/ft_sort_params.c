@@ -6,7 +6,7 @@
 /*   By: jterrazz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 13:07:34 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/10 13:07:41 by jterrazz         ###   ########.fr       */
+/*   Updated: 2024/09/24 17:36:14 by mumajeed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@ void	ft_putchar(char c);
 
 void	print_args(int length, char **argv)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = 1;
 	while (i < length)
@@ -31,9 +31,9 @@ void	print_args(int length, char **argv)
 	}
 }
 
-int		ft_strcmp(char *str1, char *str2)
+int	ft_strcmp(char *str1, char *str2)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str1[i] == str2[i] && str1[i] && str2[i])
@@ -63,7 +63,7 @@ void	sort_args(int length, char **argv)
 	}
 }
 
-int		main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	sort_args(argc, argv);
 	print_args(argc, argv);

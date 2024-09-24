@@ -6,7 +6,7 @@
 /*   By: jterrazz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 13:20:36 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/10 13:20:48 by jterrazz         ###   ########.fr       */
+/*   Updated: 2024/09/24 17:41:45 by mumajeed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	*ft_range(int min, int max)
 {
-	int *arr;
-	int i;
+	int	*arr;
+	int	i;
 
 	if (min >= max)
 	{

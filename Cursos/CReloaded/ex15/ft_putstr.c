@@ -6,7 +6,7 @@
 /*   By: jterrazz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 12:58:10 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/10 12:58:17 by jterrazz         ###   ########.fr       */
+/*   Updated: 2024/09/24 17:29:57 by mumajeed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@ void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (*(str + i) != '\0')

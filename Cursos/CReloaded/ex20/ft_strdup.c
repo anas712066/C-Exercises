@@ -6,29 +6,40 @@
 /*   By: jterrazz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 13:19:01 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/10 13:19:24 by jterrazz         ###   ########.fr       */
+/*   Updated: 2024/09/24 17:40:44 by mumajeed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include <string.h>
+
+int	ft_str_length(char *str)
+{
+	int	index;
+
+	index = 0;
+	while (str[index])
+		index++;
+	return (index);
+}
 
 char	*ft_strdup(char *src)
 {
-	char	*str;
-	int		size;
-	int		i;
+	int		index;
+	char	*dest;
+	char	*d;
 
-	i = 0;
-	size = 0;
-	while (src[size])
-		size++;
-	if ((str = (char *)malloc(sizeof(*str) * size)) == NULL)
-		return (NULL);
-	while (src[i])
+	index = 0;
+	d = ((dest = (char *)malloc(ft_str_length(src) * sizeof(char) + 1)));
+	if (!d)
 	{
-		str[i] = src[i];
-		i++;
+		return (0);
 	}
-	str[i] = 0;
-	return (str);
+	while (src[index])
+	{
+		dest[index] = src[index];
+		index++;
+	}
+	dest[index] = '\0';
+	return (dest);
 }

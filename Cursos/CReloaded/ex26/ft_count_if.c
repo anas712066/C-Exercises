@@ -6,14 +6,14 @@
 /*   By: jterrazz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 14:06:57 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/10 14:07:04 by jterrazz         ###   ########.fr       */
+/*   Updated: 2024/09/24 18:29:13 by mumajeed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_count_if(char **tab, int (*f)(char*))
 {
-	int i;
-	int count;
+	int	i;
+	int	count;
 
 	i = 0;
 	count = 0;

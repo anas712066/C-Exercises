@@ -6,13 +6,13 @@
 /*   By: jterrazz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 12:34:53 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/10 15:02:48 by jterrazz         ###   ########.fr       */
+/*   Updated: 2024/09/24 17:27:08 by mumajeed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_iterative_factorial(int nb)
 {
-	int res;
+	int	res;
 
 	res = 1;
 	if (nb >= 0 && nb <= 12)
