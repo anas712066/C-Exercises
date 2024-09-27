@@ -1,0 +1,5 @@
+
+#!/bin/bash
+
+# Busca y borra los archivos que cumplen con los criterios especificados
+find . -type f \( -name '*~' -o -name '#*#' \) -print -delete
